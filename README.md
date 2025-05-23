@@ -1,6 +1,8 @@
 
 # Google Veo Prompt Collection
 
+(deprecated: have been merged with https://github.com/SingularityLabs-ai/Ultimate_Prompts_Directory)
+
 Welcome to the **Google Veo Prompt Collection** repository! This repo contains a curated set of high-quality sample prompts for Google's Veo text-to-video model. Whether you're a creative, developer, or AI enthusiast, these prompts are designed to help you get started with Veo and inspire your own video generation projects.
 
 ---
