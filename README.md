@@ -148,7 +148,7 @@ This repository is released under the MIT License.
 
 [^6]: https://ai.google.dev/gemini-api/docs/video
 
-<div style="text-align: center">⁂</div>
+**⁂**
 
 [^1]: https://deepmind.google/models/veo/
 
