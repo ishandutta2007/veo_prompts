@@ -9,6 +9,8 @@ Welcome to the **Google Veo Prompt Collection** repository! This repo contains a
 
 ## Table of Contents
 
+### VEO 3
+
 - [About Google Veo](#about-google-veo)
 - [Prompt Philosophy](#prompt-philosophy)
 - [Prompt List](#prompt-list)
