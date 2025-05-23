@@ -1,5 +1,3 @@
-# veo_prompts
-
 
 # Google Veo Prompt Collection
 
