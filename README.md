@@ -114,3 +114,8 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 *SEO Keywords: Google Veo, Text-to-Video AI, Video Prompt Engineering, Generative Video, AI Filmmaking, Vertex AI, DeepMind Veo.*
+
+
+## ✨ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/veo_prompts&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/veo_prompts&type=date&legend=top-left)
