@@ -1,0 +1,1 @@
+a man doing stand up comedy in a small venue tells a joke (include the joke in the dialogue)

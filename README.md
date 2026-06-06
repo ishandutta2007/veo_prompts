@@ -15,7 +15,7 @@ Whether you are a filmmaker, developer, or AI enthusiast, these prompts provide 
 
 ## 🚀 Quick Start
 
-1. **Browse** the [Prompt Library](#-prompt-library).
+1. **Browse** the [Prompt Library](prompts/).
 2. **Copy** a prompt that fits your vision.
 3. **Generate** using [Vertex AI Studio](https://cloud.google.com/vertex-ai) or the [Gemini API](https://ai.google.dev/gemini-api/docs/video).
 
@@ -32,20 +32,24 @@ Google Veo is a groundbreaking generative AI model by **Google DeepMind** that t
 
 ## 🎭 Prompt Library
 
-Explore our curated list of prompts across various genres:
+Explore our curated list of prompts across various genres in the [prompts/](prompts/) directory. For visual examples, check out the [Veo 3 Showcase](Veo3_Videos.md).
 
-| Name | Description |
-| :--- | :--- |
-| 🏙️ **Urban Sunrise** | A wide-angle shot of a bustling city skyline at sunrise, golden light reflecting off skyscrapers. |
-| 🕵️ **Rainy Street Noir** | Cinematic close-up of a detective in a trench coat walking down a rain-soaked alley at night. |
-| 🌲 **Forest Time-lapse** | Time-lapse of a dense forest as sunlight filters through the trees, shadows shifting. |
-| 🚀 **Futuristic Market** | Sweeping drone shot of a vibrant, futuristic street market with holographic signs. |
-| 🏔️ **Mountain Hiker** | Medium shot of a hiker ascending a rocky mountain trail with dramatic clouds. |
-| 🐕 **Playful Puppy** | Slow-motion close-up of a golden retriever puppy chasing a red ball across a field. |
-| 🌌 **Space Dock Arrival** | Wide shot of a spaceship docking at a massive orbital station with Earth in view. |
-| 🍂 **Autumn Lake** | Serene shot of a calm lake surrounded by autumn trees, mirrored perfectly in the water. |
-| 🎷 **Jazz Club Vibes** | Intimate, low-lit scene of a jazz quartet performing on stage in a smoky club. |
-| ❄️ **Snowy Village** | Aerial shot of a cozy mountain village at dusk, snow falling gently on cottage lights. |
+### 🌟 Featured Prompts
+
+| Name | Description | File |
+| :--- | :--- | :--- |
+| 🏙️ **Urban Sunrise** | A wide-angle shot of a bustling city skyline at sunrise. | [`Urban_Sunrise.txt`](prompts/Urban_Sunrise.txt) |
+| 🕵️ **Rainy Street Noir** | Cinematic close-up of a detective in a rain-soaked alley. | [`Rainy_Street_Noir.txt`](prompts/Rainy_Street_Noir.txt) |
+| 🧱 **LEGO Adventure** | Dynamic camera gliding through a miniature LEGO world. | [`Lego_Adventure.txt`](prompts/Lego_Adventure.txt) |
+| 🦖 **Dinosaur Guitarist** | A dinosaur playing guitar at a waterside bar. | [`Dinosaur_Guitarist.txt`](prompts/Dinosaur_Guitarist.txt) |
+| 🎤 **Rap Battle** | Isaac Newton vs Albert Einstein in a futuristic rap battle. | [`Rap_Battle_Newton_Einstein.txt`](prompts/Rap_Battle_Newton_Einstein.txt) |
+| 🐨 **Breakdancing Koalas** | Humanoid koalas in a neon-lit urban dance battle. | [`Breakdancing_Koalas.txt`](prompts/Breakdancing_Koalas.txt) |
+| 🧁 **Talking Muffins** | Two muffins having a conversation while baking. | [`Talking_Muffins.txt`](prompts/Talking_Muffins.txt) |
+| 🚀 **Futuristic Market** | Sweeping drone shot of a vibrant, futuristic street market. | [`Futuristic_Market.txt`](prompts/Futuristic_Market.txt) |
+| 🐕 **Playful Puppy** | Slow-motion close-up of a golden retriever puppy. | [`Playful_Puppy.txt`](prompts/Playful_Puppy.txt) |
+| 🦒 **Giraffe NYC** | A giraffe pulling a wheelie on a dirt bike in NYC. | [`Giraffe_Dirt_Bike_NYC.txt`](prompts/Giraffe_Dirt_Bike_NYC.txt) |
+
+[View all prompts →](prompts/)
 
 ---
 
