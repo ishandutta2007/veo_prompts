@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Google Veo Prompt Collection Banner" width="100%" />
+</p>
+
 # 🎬 Google Veo Prompt Collection
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -6,6 +10,7 @@
   <a href="https://github.com/ishandutta2007">
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=for-the-badge&logo=github&logoColor=white" alt="Github"/>
   </a>
+
   
 
 > [!NOTE]

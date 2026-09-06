@@ -1,0 +1,313 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913" />
+      <stop offset="40%" stop-color="#0b1021" />
+      <stop offset="80%" stop-color="#120c24" />
+      <stop offset="100%" stop-color="#080711" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="glow-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f355da" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7000ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Text Gradient Google AI Style -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4285F4">
+        <animate attributeName="stop-color" values="#4285F4;#9b51e0;#00f2fe;#4285F4" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="35%" stop-color="#9b51e0">
+        <animate attributeName="stop-color" values="#9b51e0;#ff4b72;#ffaa00;#9b51e0" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#ff4b72">
+        <animate attributeName="stop-color" values="#ff4b72;#00f2fe;#4285F4;#ff4b72" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#4285F4;#9b51e0;#00f2fe" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Card Glass Gradient -->
+    <linearGradient id="card-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6">
+        <animate attributeName="stop-color" values="#00f2fe;#ff4b72;#9b51e0;#00f2fe" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#7000ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ff4b72" stop-opacity="0.6">
+        <animate attributeName="stop-color" values="#ff4b72;#00f2fe;#ffaa00;#ff4b72" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="high-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+    .font-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; }
+    .font-code { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+
+    /* Keyframe Animations */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.45; }
+      50% { transform: scale(1.18) translate(20px, -15px); opacity: 0.75; }
+    }
+
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+      50% { transform: scale(1.22) translate(-25px, 15px); opacity: 0.7; }
+    }
+
+    @keyframes floatTag {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes scanLine {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 0.8; }
+      85% { opacity: 0.8; }
+      100% { transform: translateY(180px); opacity: 0; }
+    }
+
+    @keyframes waveRoll {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -400; }
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .orb-1 { animation: pulseOrb 9s ease-in-out infinite; transform-origin: center; }
+    .orb-2 { animation: pulseOrb2 11s ease-in-out infinite; transform-origin: center; }
+    .tag-float-1 { animation: floatTag 4.5s ease-in-out infinite; }
+    .tag-float-2 { animation: floatTag 5.2s ease-in-out infinite 0.8s; }
+    .tag-float-3 { animation: floatTag 4.8s ease-in-out infinite 1.6s; }
+    .scanner { animation: scanLine 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .wave-line { stroke-dasharray: 12 8; animation: waveRoll 14s linear infinite; }
+    .rec-blink { animation: blink 1.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="url(#border-grad)" stroke-width="1.5" />
+
+  <!-- Animated Ambient Orbs -->
+  <g filter="url(#high-glow)">
+    <circle class="orb-1" cx="220" cy="100" r="140" fill="url(#glow-cyan)" />
+    <circle class="orb-2" cx="980" cy="220" r="160" fill="url(#glow-purple)" />
+    <circle cx="600" cy="320" r="120" fill="#4285F4" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.25;0.1" dur="6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Futuristic Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Film Strip Top Border Accent -->
+  <g opacity="0.4">
+    <rect x="30" y="20" width="1140" height="12" rx="3" fill="#13192b" />
+    <g fill="#070913">
+      <rect x="45" y="23" width="10" height="6" rx="1.5" />
+      <rect x="75" y="23" width="10" height="6" rx="1.5" />
+      <rect x="105" y="23" width="10" height="6" rx="1.5" />
+      <rect x="135" y="23" width="10" height="6" rx="1.5" />
+      <rect x="165" y="23" width="10" height="6" rx="1.5" />
+      <rect x="195" y="23" width="10" height="6" rx="1.5" />
+      <rect x="225" y="23" width="10" height="6" rx="1.5" />
+      <rect x="255" y="23" width="10" height="6" rx="1.5" />
+      <rect x="285" y="23" width="10" height="6" rx="1.5" />
+      <rect x="315" y="23" width="10" height="6" rx="1.5" />
+      <rect x="875" y="23" width="10" height="6" rx="1.5" />
+      <rect x="905" y="23" width="10" height="6" rx="1.5" />
+      <rect x="935" y="23" width="10" height="6" rx="1.5" />
+      <rect x="965" y="23" width="10" height="6" rx="1.5" />
+      <rect x="995" y="23" width="10" height="6" rx="1.5" />
+      <rect x="1025" y="23" width="10" height="6" rx="1.5" />
+      <rect x="1055" y="23" width="10" height="6" rx="1.5" />
+      <rect x="1085" y="23" width="10" height="6" rx="1.5" />
+      <rect x="1115" y="23" width="10" height="6" rx="1.5" />
+      <rect x="1145" y="23" width="10" height="6" rx="1.5" />
+    </g>
+  </g>
+
+  <!-- Decorative Wave Lines -->
+  <path class="wave-line" d="M 0,90 Q 300,160 600,100 T 1200,110" fill="none" stroke="#00f2fe" stroke-width="1.2" opacity="0.25" />
+  <path class="wave-line" d="M 0,270 Q 300,200 600,260 T 1200,250" fill="none" stroke="#f355da" stroke-width="1.2" opacity="0.2" style="animation-direction: reverse; animation-duration: 18s;" />
+
+  <!-- LEFT / CENTER HERO SECTION -->
+  <g transform="translate(60, 0)">
+    <!-- Top Pill Badge: LIVE / REC AI VIDEO -->
+    <g transform="translate(0, 52)">
+      <rect width="186" height="28" rx="14" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1" />
+      <!-- Pulsing REC dot -->
+      <circle class="rec-blink" cx="16" cy="14" r="5" fill="#ff3b30" />
+      <text x="30" y="18" class="font-code" font-size="11" font-weight="700" fill="#ff6b6b" letter-spacing="1">GOOGLE DEEPMIND</text>
+      <text x="146" y="18" class="font-code" font-size="10" font-weight="600" fill="#a0aec0">VEO</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 134)">
+      <text class="font-title" font-size="52" fill="url(#title-grad)" letter-spacing="-0.5">
+        GOOGLE VEO
+      </text>
+      <text x="345" y="0" class="font-title" font-size="52" fill="#ffffff" font-weight="300" opacity="0.95" letter-spacing="-0.5">
+        PROMPTS
+      </text>
+    </g>
+
+    <!-- Subtitle -->
+    <text x="0" y="174" class="font-sub" font-size="17" fill="#b4c6ef" opacity="0.9" letter-spacing="0.2">
+      Curated Generative Video Prompts, Camera Mechanics &amp; Cinematic Recipes
+    </text>
+
+    <!-- Interactive / Dynamic Feature Pills -->
+    <g transform="translate(0, 215)">
+      <!-- Pill 1: 4K Cinematic -->
+      <g class="tag-float-1">
+        <rect width="154" height="34" rx="8" fill="#18233c" stroke="#4285F4" stroke-width="1" opacity="0.9" />
+        <polygon points="18,12 18,22 27,17" fill="#4285F4" />
+        <text x="34" y="22" class="font-code" font-size="12" font-weight="600" fill="#93c5fd">4K Cinematic</text>
+      </g>
+
+      <!-- Pill 2: Physics Aware -->
+      <g transform="translate(166, 0)" class="tag-float-2">
+        <rect width="168" height="34" rx="8" fill="#251838" stroke="#9b51e0" stroke-width="1" opacity="0.9" />
+        <circle cx="18" cy="17" r="4.5" fill="none" stroke="#c084fc" stroke-width="1.8" />
+        <path d="M 14,17 L 22,17 M 18,13 L 18,21" stroke="#c084fc" stroke-width="1.5" />
+        <text x="32" y="22" class="font-code" font-size="12" font-weight="600" fill="#d8b4fe">Physics-Aware</text>
+      </g>
+
+      <!-- Pill 3: Veo 2 & 3 Ready -->
+      <g transform="translate(346, 0)" class="tag-float-3">
+        <rect width="170" height="34" rx="8" fill="#142a36" stroke="#00f2fe" stroke-width="1" opacity="0.9" />
+        <polygon points="18,11 22,16 28,16 23,20 25,26 19,22 14,26 16,20 11,16 17,16" fill="#22d3ee" />
+        <text x="34" y="22" class="font-code" font-size="12" font-weight="600" fill="#67e8f9">Veo 2 &amp; 3 Ready</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metadata specs -->
+    <g transform="translate(0, 290)" opacity="0.75">
+      <text class="font-code" font-size="11" fill="#718096">
+        <tspan fill="#48bb78">&#x25CF; ACTIVE REPO</tspan>
+        <tspan fill="#4a5568">  &#x2502;  </tspan>
+        <tspan fill="#cbd5e0">16:9 &#x2022; 9:16 &#x2022; 24FPS</tspan>
+        <tspan fill="#4a5568">  &#x2502;  </tspan>
+        <tspan fill="#cbd5e0">VERTEX AI &amp; GEMINI API</tspan>
+        <tspan fill="#4a5568">  &#x2502;  </tspan>
+        <tspan fill="#ecc94b">&#x2605; PRODUCTION READY</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT SIDE: CINEMATIC VIEWFINDER / PROMPT TERMINAL PREVIEW -->
+  <g transform="translate(710, 52)">
+    <!-- Viewfinder Container with Glassmorphism -->
+    <rect width="430" height="252" rx="14" fill="url(#card-glass)" stroke="url(#border-grad)" stroke-width="1.5" />
+
+    <!-- Terminal Header Bar -->
+    <rect width="430" height="34" rx="14" fill="#101524" fill-opacity="0.85" />
+    <rect y="22" width="430" height="12" fill="#101524" fill-opacity="0.85" />
+    
+    <!-- Window Controls -->
+    <circle cx="20" cy="17" r="4.5" fill="#ff5f56" />
+    <circle cx="36" cy="17" r="4.5" fill="#ffbd2e" />
+    <circle cx="52" cy="17" r="4.5" fill="#27c93f" />
+
+    <text x="75" y="21" class="font-code" font-size="11" fill="#8892b0">prompt-recipe.json &#x2014; 1080p 60fps</text>
+
+    <!-- Live Recording / Camera HUD overlay -->
+    <g transform="translate(365, 12)">
+      <rect width="50" height="18" rx="4" fill="#ff3b30" fill-opacity="0.2" stroke="#ff3b30" stroke-width="0.8" />
+      <circle class="rec-blink" cx="10" cy="9" r="3" fill="#ff3b30" />
+      <text x="18" y="13" class="font-code" font-size="9" font-weight="700" fill="#ff6b6b">REC</text>
+    </g>
+
+    <!-- Scanner Ray Moving across the viewport -->
+    <g clip-path="url(#viewfinder-clip)">
+      <defs>
+        <clipPath id="viewfinder-clip">
+          <rect x="0" y="34" width="430" height="218" rx="0" />
+        </clipPath>
+      </defs>
+      <line class="scanner" x1="15" y1="36" x2="415" y2="36" stroke="url(#glow-cyan)" stroke-width="2" opacity="0.8" filter="url(#glow)" />
+    </g>
+
+    <!-- Viewfinder Reticle Corners -->
+    <g stroke="#00f2fe" stroke-width="1.5" fill="none" opacity="0.7">
+      <path d="M 22,54 L 34,54 M 22,54 L 22,66" />
+      <path d="M 408,54 L 396,54 M 408,54 L 408,66" />
+      <path d="M 22,230 L 34,230 M 22,230 L 22,218" />
+      <path d="M 408,230 L 396,230 M 408,230 L 408,218" />
+      <circle cx="215" cy="142" r="14" stroke="#ffffff" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.3" />
+      <line x1="215" y1="133" x2="215" y2="151" stroke="#ffffff" stroke-width="0.8" opacity="0.4" />
+      <line x1="206" y1="142" x2="224" y2="142" stroke="#ffffff" stroke-width="0.8" opacity="0.4" />
+    </g>
+
+    <!-- Prompt Syntax Content -->
+    <g transform="translate(28, 62)" class="font-code" font-size="11.5">
+      <text y="14" fill="#64748b">{</text>
+      <text x="14" y="34" fill="#a78bfa">"subject":</text>
+      <text x="96" y="34" fill="#67e8f9">"Cyberpunk detective",</text>
+
+      <text x="14" y="54" fill="#a78bfa">"action":</text>
+      <text x="96" y="54" fill="#fbcfe8">"walking down rainy alley",</text>
+
+      <text x="14" y="74" fill="#a78bfa">"lighting":</text>
+      <text x="96" y="74" fill="#fde047">"volumetric neon reflection",</text>
+
+      <text x="14" y="94" fill="#a78bfa">"camera":</text>
+      <text x="96" y="94" fill="#86efac">"low-angle tracking shot 35mm",</text>
+
+      <text x="14" y="114" fill="#a78bfa">"motion":</text>
+      <text x="96" y="114" fill="#93c5fd">"hyper-realistic fluid puddles"</text>
+      <text y="134" fill="#64748b">}</text>
+
+      <!-- Running Generator Badge -->
+      <g transform="translate(0, 148)">
+        <rect width="374" height="26" rx="6" fill="#0f172a" fill-opacity="0.9" stroke="#334155" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3" fill="#22c55e">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <text x="22" y="17" font-size="10" fill="#cbd5e1">veo-2.0-generate-001 <tspan fill="#38bdf8">--aspect 16:9 --quality high</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
